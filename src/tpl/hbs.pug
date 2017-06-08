@@ -1,0 +1,44 @@
+script#home-todayinfo(type="text/x-handlebars-template")
+  | {{#each news}}
+  a.listitem(href="#search/detail/5ag952da41a3ds2g1e6a5t1et")
+    .head
+      .title {{title}}
+      .time {{time}}
+    .cont {{cont}}
+    .foot
+      div 来自：{{from_country}}
+      div 来源：{{from_media}}
+      div 分类：{{category}}
+  | {{/each}}
+
+script#home-topiclist(type="text/x-handlebars-template")
+  | {{#each news}}
+  .listitem
+    .title {{title}}
+    .time {{time}}
+  | {{/each}}
+
+script#tpl-home-reportlist(type="text/x-handlebars-template")
+  .list
+    | {{#each item}}
+    .item
+      .title {{title}}
+      .cont {{cont}}
+    | {{/each}}
+
+script#tpl-search-list(type="text/x-handlebars-template")
+  .listInfo
+    .title 
+      p 
+        a(href="#search/detail/5ag952da41a3ds2g1e6a5t1et")  台裔美军官同意美国政府指控数项罪名 不承认为两岸当间谍
+      p.reltime 05-05 08:34 
+    p.introInfo 美国军方2015年9月逮捕台湾裔高级军官林介良(又名爱德华·林或艾迪)，指控其从事谍报活动。美联社5月4日报道称，林介良被控将军事机密泄漏给中国大陆或台湾地区，其军事审判于当天开庭。 
+    ul.source
+      li 来自：
+        span 美国
+      li 来源： 
+        span BBC
+      li 分类：
+        span 法规
+      li 情报负责人：
+        span 王明

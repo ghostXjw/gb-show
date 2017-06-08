@@ -1,0 +1,8 @@
+/dist
+/dist.zip
+/electron
+/electron.zip
+/tmp
+
+/npm-debug.log
+/node_modules

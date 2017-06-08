@@ -1,0 +1,451 @@
+#page-home>.todayinfo
+  position absolute
+  top 170px
+  left 56px
+  width 512px
+  >.head
+    color #ffb924
+    overflow hidden
+    margin-bottom 34px
+    .title
+      font-size 24px
+      float left
+    .more
+      font-size 16px
+      color inherit
+      text-decoration none
+      float left
+      margin-top 10px
+      margin-left 40px
+    .num
+      float right
+      margin-right 22px
+  >.tabs
+    margin-bottom 25px
+    display flex
+    label
+      margin-right 16px
+      [type=radio]
+        display none
+      .cont
+        height 86px
+        width 86px
+        box-sizing border-box
+        text-align center
+        cursor pointer
+        position relative
+        >img
+          margin 2px auto 3px
+        >.name
+          color #03acca
+          width 86px
+        >.num
+          width 29px
+          height 29px
+          border-radius 50%
+          background #cb1b1b
+          color white
+          font-size 16px
+          line-height 28px
+          box-shadow 0 2px 7px 1px rgba(255,0,0,.35)
+          position absolute
+          top -4px
+          right 6px
+      [type=radio]:checked + .cont
+        background url(../img/home-todayinfo.png)
+        >img
+          filter brightness(1.5) drop-shadow(0 0 6px rgba(255,255,255,.6))
+        >.name
+          color #7eebff
+          text-shadow 0 0 6px white
+  >.tabcont
+    .listitem
+      box-sizing border-box
+      border-bottom 2px dotted #133399
+      font-size 14px
+      padding 18px 10px
+      cursor pointer
+      text-decoration none
+      display block
+      &:last-child
+        border-bottom 0
+      >.head
+        color #ff302b
+        display flex
+        justify-content space-between
+        align-items center
+        margin-bottom 8px
+        >.title
+          font-size 18px
+      >.cont
+        color #6f87d6
+        line-height 24px
+        margin-bottom 8px
+      >.foot
+        display flex
+        justify-content space-between
+        color #097e93
+
+#page-home>.topicblock
+  position absolute
+  top 154px
+  right 63px
+  width 494px
+  >.item
+    margin-bottom 44px
+    >.head
+      color #ffb924
+      display flex
+      align-items baseline
+      margin-bottom 26px
+      .title
+      .num
+        font-size 24px
+      .more
+        font-size 16px
+        color inherit
+        text-decoration none
+        margin-left 40px
+      .num
+        flex-grow 1
+        text-align right
+    >.chart
+      margin-bottom 12px
+    >.chart2
+      display flex
+      justify-content center
+      margin-bottom -14px
+    >.cont
+      >.listitem
+        height 32px
+        display flex
+        justify-content space-between
+        align-items center
+        cursor pointer
+        color #6f87d6
+        &:hover
+          color #ff302b
+
+
+#page-home>.lchart
+  position absolute
+  top 158px
+  left 600px
+  width 440px
+  transition all .5s ease
+  >.title
+    color #b7c9ff
+    font-size 18px
+    text-align center
+
+#page-home>.rchart
+  position absolute
+  width 400px
+  top 154px
+  right 638px
+  transition all .5s ease
+  >.title
+    color #ffb924
+    font-size 24px
+  >.todaystatus
+    color #6f87d6
+    display flex
+    flex-wrap wrap
+    margin -5px auto 14px
+    >.item
+      width 50%
+      height 63px
+      display flex
+      align-items center
+  >.topchart
+    margin 12px 0 24px
+  >.hotkws
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    margin-top 36px
+    >.item
+      width 81px
+      height 39px
+      line-height 36px
+      text-align center
+      box-sizing border-box
+      color #6f87d6
+      margin-bottom 30px
+      &.active
+        background url(../img/home-hotkw-bg.png)
+
+#earth-timelabel
+  position absolute
+  bottom 24px
+  width 210px
+  left calc(50% - 105px)
+  font-size 16px
+  color #9ab0f7
+  white-space nowrap
+  .time
+    display inline-block
+    margin 0 10px
+
+#page-home>.todayinfo
+#page-home>.lchart
+#page-home>.topicblock
+#page-home>.rchart
+#home-report-btn
+#earth-timelabel
+  transition all 1s ease
+  &.fadeOut
+    visibility hidden
+    opacity 0
+
+#page-home>.todayinfo
+#page-home>.lchart
+  &.fadeOut
+    transform translateX(-600px)
+
+#page-home>.topicblock
+#page-home>.rchart
+  &.fadeOut
+    transform translateX(600px)
+
+#home-report-btn
+  &.fadeOut
+    transform translateY(-100px)
+
+#earth-timelabel
+  transition all .3s ease
+  &.fadeOut
+    transform translateY(100px)
+
+#app.layout0
+  #page-home>.lchart
+    transform translateX(-100px)
+    opacity 0
+    visibility hidden    
+  #page-home>.rchart
+    transform translateX(100px)
+    opacity 0
+    visibility hidden
+
+#home-report-btn
+  position fixed
+  top 42px
+  left calc(50% - 24px)
+  cursor pointer
+  z-index 1000
+
+#home-report-mask
+  position fixed
+  z-index 100
+  top 0
+  left 0
+  right 0
+  bottom 0
+  opacity 0
+  transition all .5s ease
+  background rgba(0, 0, 0, .6)
+  visibility hidden
+  &.active
+    visibility visible
+    backdrop-filter blur(6px)
+    opacity 1
+  >.left
+  >.right
+    position absolute
+    top 523px
+    cursor pointer
+  >.left
+    left calc(50% - 1030px)
+    #app.layout0 &
+      left calc(50% - 950px)
+  >.right
+    right calc(50% - 1030px)
+    transform rotate(180deg)
+    #app.layout0 &
+      right calc(50% - 950px)
+
+#home-report-mask>.list
+  position absolute
+  display flex
+  flex-wrap wrap
+  top 251px
+  width 1756px
+  left 'calc(50% - %s)' % (@width / 2)
+  overflow hidden
+  height 630px
+  transition all .4s ease
+  &.flyleft
+    transform translateX(-500px)
+    opacity 0
+  &.flyright
+    transform translateX(500px)
+    opacity 0
+  #app.layout0 &
+    width 1656px
+    left 'calc(50% - %s)' % (@width / 2)
+  >.item
+    width 239px
+    height 289px
+    background url(../img/home-report-bg.png)
+    margin-bottom 46px
+    margin-right 64px
+    padding 26px 11px
+    box-sizing border-box
+    transition all .3s ease
+    opacity 1
+    transform translate(0, 0)
+    cursor pointer
+    for num in (1..12)
+      &:nth-child({num})
+        transition-delay .05s * num
+    ^[-1].enter>.item
+      transition-duration 0s
+      transition-delay 0s!important
+      opacity 0
+      transform translate(6px, 8px)
+    &.fadeOut
+      opacity 0
+      transition all .5s ease 0s!important
+    &.fadeCont
+      transform rotateY(90deg)
+      transition all .5s ease!important
+      >*
+        transition all .5s ease
+        opacity 0
+    &.rotate
+    #app.layout0 &
+      margin-right 44px
+    &:nth-child(6n)
+      margin-right 0!important
+    >.title
+      color #e3280f
+      font-size 14px
+      border-bottom 3px solid #e3280f
+      line-height 25px
+      height 65px
+      box-sizing border-box
+      margin-bottom 26px
+      text-align center
+      padding 0 25px
+    >.cont
+      padding-left 26px
+      color #6f87d6
+      line-height 34px
+      font-size 20px
+      width 382px
+      transform-origin 0 0
+      transform scale(.5)
+      height @line-height * 9
+      overflow hidden
+
+detailAndShims()
+  position absolute
+  width 1334px
+  height 797px
+  top 161px
+  left 'calc(50% - %s)' % (@width / 2)
+  border 28px solid transparent
+  box-sizing border-box
+  visibility visible
+  transition all .4s ease
+  border-image url(../img/home-report-bg.png) 28 fill
+
+shimstate0()
+  transform scale(1.08, 0.85)
+  opacity 0
+
+shimstate1()
+  transform scale(1.055, 0.903)
+  opacity .3
+
+shimstate2()
+  transform scale(1.03, 0.955)
+  opacity .5
+
+shimstate3()
+  transform scale(1, 1)
+  opacity 1
+
+shimstate4()
+  transform scale(0.8) translateY(100px)
+  filter blur(3px)
+  opacity 0
+
+#home-report-mask
+  >.shim
+    detailAndShims()
+    z-index 40
+    &.hide
+      visibility hidden
+      opacity 0!important
+  >.dshim0
+    shimstate2()
+    &.hide
+    &.up
+      shimstate3()
+  >.dshim1
+    shimstate1()
+    &.hide
+    &.up
+      shimstate2()
+  >.dshim2
+    shimstate0()
+    &.hide
+    &.up
+      shimstate1()
+
+#home-report-mask>.detail
+  detailAndShims()
+  z-index 50
+  padding 0 84px
+  color #dce5ff
+  display none
+  &.up
+    shimstate4()
+  &.fadeOut
+    opacity 0
+    transform scale(.6)
+    transition all .5s ease
+  >.cont
+    transition all .4s ease
+    &.hide
+      opacity 0
+    >.close
+      position absolute
+      top -9px
+      right -5px
+      cursor pointer
+    >.title
+      font-size 30px
+      color #ff0a0a
+      margin 48px 0 24px
+      text-align center
+    >.desc
+      font-size 16px
+      margin-bottom 24px
+      text-align center
+    >.split
+      border-bottom 2px solid #ff0000
+      display flex
+      justify-content space-between
+      line-height 30px
+      font-size 14px
+    >.h1
+      margin 30px 0 20px
+      text-align center
+      font-size 24px
+    >.h2
+      margin-bottom 28px
+      font-size 24px
+    >.n
+      line-height 30px
+      margin-bottom 28px
+    >.end
+      border-top 1px solid #4d697f
+      padding-top 32px
+      line-height 30px
+      padding-left 899px
+      white-space nowrap
+      >.l
+        overflow hidden
+        text-overflow ellipsis

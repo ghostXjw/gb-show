@@ -1,0 +1,182 @@
+#page-search
+  >.back-btn
+    opacity 0
+    transition all .6s ease
+    &.show
+      opacity 1
+  >.leftnav
+    top 172px
+    width 255px
+    left 'calc(50% - %s)' % (@width + 597px)
+    position absolute
+    opacity 0
+    transition opacity 1s linear
+    &.show
+      opacity 1
+    .title
+      color #ffb924
+      font-size 24px
+      margin-bottom 30px
+    label 
+      margin 5px 0
+      .cont 
+        width 101px
+        height 45px
+        box-sizing border-box
+        cursor pointer
+        position relative
+        line-height 45px
+        font-size 16px
+        margin 15px 0
+        padding-left 16px
+    label [type=radio]
+      display none
+    label div
+      color #03acca
+    [type=radio]:checked + .cont
+      background: url(../img/search-type.png)
+      color #ff3c00
+      background-size contain
+      padding-left 0
+      text-align center
+    label>.time
+      visibility: visible
+      opacity 0
+      transform: translateY(50px)
+      transition all .5s ease
+      input
+        background: url(../img/timebg.png)
+        width 255px
+        height 45px
+        background-size contain
+        border none
+        outline none
+        text-indent 1em
+        color #03acca
+        font-size 16px
+        display: block
+        text-align center
+      span
+        width 13px
+        border 1px solid #575fa6
+        height 1px
+        display block
+        margin 3px 0
+        margin-left 121px
+    [type=radio]:checked ~ .time
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)
+  .sure 
+    button
+      width 69px
+      height 45px
+      background url(../img/sure.png)
+      background-size contain
+      color #9ab0f7
+      border none
+      outline none
+      margin-top 15px
+
+  .rightcont
+    top 156px
+    left calc(50% - 597px)
+    position absolute
+    width 1180px
+    .articledetail
+      display none
+      opacity 0
+      transition opacity .3s linear
+      &.show
+        opacity 1  
+    .articleList
+    .articledetail
+      .title 
+        font-size 28px
+        color #dce5ff
+        display flex
+        justify-content space-between
+        line-height 34px
+        align-items center
+        height 34px
+        a
+          color #dce5ff
+          text-decoration none
+        .reltime 
+          font-size 16px
+          color #dce5ff
+      .source
+        display flex
+        justify-content space-between
+        list-style none
+        padding 0
+        margin 0
+        li
+          color #097e93
+          font-size 14px
+          height 34px
+          line-height 34px
+          margin 24px 0 
+      .continfo
+        font-size 14px
+        color #6f87c9
+        line-height 24px
+        p
+          text-indent 2em
+          margin-top 0
+    .articleList
+      display block
+      padding-top 20px
+      opacity 0
+      transition opacity .3s linear
+      &.show
+        opacity 1
+      .listcon
+        height: 755px
+        .title
+          font-size 18px
+          .reltime
+            font-size 14px
+        .introInfo
+          color #6f87d6
+          font-size 14px
+          margin 0
+          line-height 24px
+          height 24px
+        .source
+          li
+      .page
+        text-align cneter
+        opacity 0
+        transition opacity 1s linear
+        &.show
+          opacity 1
+        ul
+          list-style none 
+          margin 0
+          padding 0
+          display flex
+          justify-content center
+          li
+            background url(../img/page.png)
+            width 48px
+            height 43px
+            background-size contain
+            line-height 43px
+            text-align center
+            color #9ab0f7
+            margin 0 5px
+            &:nth-child(1)
+            &:last-child
+              background: url(../img/prevpage.png)
+              width 88px
+              height 43px
+            
+
+
+  
+        
+      
+
+
+

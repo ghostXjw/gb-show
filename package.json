@@ -1,0 +1,43 @@
+{
+  "name": "gb_show",
+  "version": "1.0.0",
+  "description": "国保大屏项目",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp dev",
+    "dev": "gulp dev",
+    "electron": "electron ./electron/app",
+    "electron_build": "gulp electron",
+    "electron_dev": "gulp electron_dev",
+    "electron_pack": "gulp electron_pack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/cczz/eth3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^4.9.1",
+    "echarts": "~3.5.4",
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "requirejs": "^2.3.3",
+    "three": "^0.85.2",
+    "tween.js": "^16.6.0"
+  },
+  "devDependencies": {
+    "electron": "^1.6.10",
+    "electron-packager": "^8.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "rimraf": "^2.6.1"
+  }
+}

@@ -1,0 +1,106 @@
+mixin todayinfoTabs(name, icon, checked)
+  label
+    input(type="radio", name="todayinfo-tabs", checked=checked)
+    .cont
+      img(src=`img/i-${icon}.png`, draggable="false")
+      .name= name
+      .num 1
+
+.m-page#page-home
+  #earth-timelabel
+    | 时间范围
+    span.time 5：00
+    | -
+    span.time 9：00
+  img#home-report-btn(src="img/home-report.png", draggable="false")
+  #home-report-mask
+    img.left(src="img/home-left.png", draggable="false")
+    img.right(src="img/home-left.png", draggable="false")
+    .detail
+      .cont
+        img.close(src="img/home-close.png", draggable="false")
+        .title 铜陵市鼎盛民航中专文件
+        .desc 2017年	 第6期 	（总第23期）
+        .split
+          .l 测 2 篇
+          .r 2017年 5月 22日
+        .h1 本期导读
+        .h2 题目
+        .n 关于成立铜陵市鼎盛民航学校学生资助管理办公室的通知  为贯彻落实《安徽省人民政府关于建立健全普通本科高校高等职业学校和中等职业学校家庭经济困难学生资助政策体系的实施意见》精神.
+        .n 统筹做好家庭经济困难学生资助各项工作，经研究，决定成立铜陵市鼎盛民航学校学生资助管理办公室。 一、资助中心组成人员     主 任：周萍	副主任：王森、娄敏、朱美和、赵春荣  工作人员：康连友、朱文祥、姜龙、周翔燕 二、学生资助管理办公室主要职责  （一）负责义务教育阶段家庭经济困难学生资助工作。 （二）负责中等职业学校国家助学金的发放管理工作。 （三）负责开展家庭经济困难学生资助政策宣传和咨询工作。 （四）负责完成省和市教育局统一部署的其他有关学生资助工作。  
+        .end
+          .l 主题词：贫困生、资助管理、办法                               
+          .l 报：、上级主管部门                                      
+          .l 送：  校各科室                                                                      
+          .l 2010年8月   印数10份
+    .dshim0.shim.hide
+    .dshim1.shim.hide
+    .dshim2.shim.hide
+  .todayinfo
+    .head
+      .title 今日情报
+      a.more(href="#search") 更多>
+      svg.num(height=28, width=120)
+        defs
+          linearGradient#grad(x1=0,y1=1,x2=0,y2=0)
+            stop(offset=0,stop-color="#ffb924")
+            stop(offset=1,stop-color="#ffdf9d")
+        text(font-size=24,x=120,y=25,fill="url(#grad)",text-anchor="end") 6123条
+    .tabs
+      +todayinfoTabs('标准', 'standard', true)
+      +todayinfoTabs('法规', 'law')
+      +todayinfoTabs('技术', 'code')
+      +todayinfoTabs('威胁', 'alert')
+      +todayinfoTabs('新闻事件', 'news')
+    .tabcont
+  .topicblock
+    .item
+      .head
+        .title 反恐专题
+        a.more(href="#topic") 更多>
+        .num 1365条
+      .chart(style="height: 154px")
+      .cont
+    .item
+      .head(style="margin-bottom: 0;")
+        .title 反恐专题
+        a.more(href="#topic") 更多>
+        .num 2531条
+      .chart2
+      .cont
+  .lchart
+    .lchart1(style="height: 160px;")
+    .title(style="margin: 10px 0 20px;") 趋势分析
+    .lchart2
+    .title(style="margin: -10px 0 12px;") 国别占比
+    .lchart3
+    .title(style="margin: -10px 0 0;") 分类占比
+  .rchart
+    .title 今日情报状态
+    .todaystatus
+      .item 驳回情报：
+        .num 20
+      .item 编辑情报：
+        .num 50
+      .item 翻译情报：
+        .num 35
+      .item 提交情报：
+        .num 16
+      .item 录入情报：
+        .num 28
+    .title 情报载体Top
+    .topchart(style="height: 256px;")
+    .title 情报热词
+    .hotkws
+      .item.active 美国
+      .item 阿富汗
+      .item 病毒
+      .item 网络
+      .item 救援
+      .item 抗议
+      .item 伊拉克
+      .item 反恐
+      .item 萨达姆
+      .item 导弹
+      .item 武器
+      .item 日本

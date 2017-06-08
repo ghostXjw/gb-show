@@ -1,0 +1,102 @@
+/* CSS Document */
+.jedatebox{width:254px;height:278px; font-family:'PingFangSC-Light','PingFang SC','Segoe UI','Lucida Grande','NotoSansHans-Light','Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;font-size:12px; cursor:default;margin: 0;padding: 0;overflow: hidden; opacity: 0;transition: all 0.5s ease; transform:translateY(100px)}
+.jedatebox.show{ opacity: 1; transform: translateY(0)}
+.jedatebox *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-style:normal;font-family:'PingFangSC-Light','PingFang SC','Segoe UI','Lucida Grande','NotoSansHans-Light','Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;font-size:12px;}
+.jedatebox ul,.jedatebox ol,.jedatebox li,.jedatebox dl{list-style-type:none;font-style:normal;font-weight: 300;}
+.jedatebox .jedateym .prev{background: url("../img/prev-time.png") no-repeat;}
+.jedatebox .jedateym .next{background: url("../img/next-time.png");}
+.jedatebox .jedateym .pndrop{width:0px;height:40px; overflow:hidden;display: inline-block;position:relative;vertical-align: top;background-repeat: no-repeat;background-position: center center;}
+.jedatebox .jedateym .prev,.jedatebox .jedateym .next{width:15%;height:40px; float:left;display:block;text-align: center;background-repeat: no-repeat;background-position: center center;}
+.jedatebox em,.jedatebox i{height:40px;margin: 0;padding: 0;font-style:normal;display:inline-block;font-size: 16px;}
+.jedatetipscon{color:#000; float:left; overflow:hidden;background-color: #FFFEF4; line-height:22px;padding:6px;border: 1px rgb(247, 206, 57) solid;font-style:normal;font-family:'PingFangSC-Light','PingFang SC','Segoe UI','Lucida Grande','NotoSansHans-Light','Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;font-size:12px;font-weight: 300;}
+.jedatetipscon p{padding: 0;margin: 0;}
+.jedatetipscon p.red{color: #ff0000;}
+
+.jedatebox .jedatehmscon::-webkit-scrollbar{height:6px;width:6px;margin-right:5px;background: #03306b;transition:all 0.3s ease-in-out;border-radius:0px}
+.jedatebox .jedatehmscon::-webkit-scrollbar-track { -webkit-border-radius: 0px;border-radius: 0px;}
+.jedatebox .jedatehmscon::-webkit-scrollbar-thumb{-webkit-border-radius: 0px;border-radius: 0px;background: rgba(0,0,0,0.5); }
+.jedatebox .jedatehmscon::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,0.6)}
+.jedatebox .jedatehmscon::-webkit-scrollbar-thumb:active{background:rgba(0,0,0,0.8)}
+.jedatebox .jedatehmscon::-webkit-scrollbar-thumb:window-inactive {background: rgba(0,0,0,0.4);}
+/* 蓝色风格 */
+.jedateblue{background: url("../img/bg-time.png") no-repeat; background-size:contain;}
+.jedateblue div,.jedateblue ol,.jedateblue ul,.jedateblue li,.jedateblue p,.jedateblue span{margin: 0;padding: 0;list-style-type:none;}
+.jedateblue.dateshow{display:block;}
+.jedateblue .jedatetop{width:100%;background: #083d7d; color:#fff;text-align:center;}
+.jedateblue .jedateym{float:left;height:40px; line-height:40px;}
+.jedateblue .jedateym span{width:70%;padding: 0;float:left;text-align: center;text-overflow: ellipsis; display:block;}
+.jedateblue .jedateym span input{width:100%;float:left;padding: 0;border:none;background-color:transparent;text-align: center;}
+.jedateblue .jedateym .triangle{margin: 0;padding:0;font-style:normal;}
+.jedateblue .jedateym .triangle:hover{background-color:#00B9E8;}
+.jedateblue .jedatesety,.jedateblue .jedatesetm{width: 100%; position:absolute;left:0; top:40px; bottom:0;background-color: #fff; z-index:50;}
+.jedateblue .jedatesety .ymdropul,.jedateblue .jedatesetm .ymdropul{width:100%;height:246px;overflow:auto;}
+.jedateblue .jedatesety .ymdropul li{width:33.3%;float:left;text-align: center;height:49px; line-height:49px;font-size: 16px;}
+.jedateblue .jedatesety .ymdropul li.disabled{color:#bbb;}
+.jedateblue .jedatesetm .ymdropul li{width:33.3%;float:left;text-align: center;height:60px; line-height:60px;font-size: 16px;}
+.jedateblue .jedatesetm .ymdropul li.disabled{color:#bbb;}
+.jedateblue .jedatesety .ymdropul li.disabled:hover,.jedateblue .jedatesetm .ymdropul li.disabled:hover{background:#fff;}
+.jedateblue .jedatesety .ymdropul li:hover,.jedateblue .jedatesetm .ymdropul li:hover{background: #F2F2F2;border-radius:4px;}
+.jedateblue .jedatesety .ymdropul li.action,.jedateblue .jedatesetm .ymdropul li.action{background: #083d7d;color:#fff;border-radius:4px;}
+.jedateblue .jedatesety .ymdropul li.action:hover,.jedateblue .jedatesetm .ymdropul li.action:hover{background: #083d7d;color:#fff;}
+.jedateblue .jedatetopym p{overflow:auto; padding-top:4px;}
+.jedateblue .jedatetopym p span{width:31%; margin:0 1.1%;background-color: #083d7d;color: #fff;display: block;height:28px;line-height:28px; border-radius:5px;text-align:center;}
+.jedateblue .jedatetopym p span.jedateymchri{background-color: #F0F0F0;color: #555;float:left;font-size: 16px;}
+.jedateblue .jedatetopym p span.jedateymchle{background-color: #F0F0F0;color: #555;float:left;font-size: 16px;}
+.jedateblue .jedatetopym p span.jedateymchok{background-color: #083d7d;color:#fff;float:right;font-size: 12px;}
+
+.jedateblue .jedayy,.jedateblue .jedaym{height:202px;overflow:auto; padding:5px;}
+.jedateblue .jedayy li{width:33.3%;float:left;text-align: center;height:38px; line-height:38px;font-size: 14px;}
+.jedateblue .jedayy li.action,.jedateblue .jedayy li.action:hover{background: #083d7d;color:#fff;border-radius:4px;}
+.jedateblue .jedayy li:hover{background: #F2F2F2;border-radius:4px;}
+.jedateblue .jedayy li.disabled{ color:#bbb;}
+.jedateblue .jedaym li{width:50%;float:left;text-align: center;height:32px; line-height:32px;font-size: 14px;}
+.jedateblue .jedaym li.action,.jedateblue .jedaym li.action:hover{background: #083d7d;color:#fff;border-radius:4px;}
+.jedateblue .jedaym li:hover{background: #F2F2F2;border-radius:4px;}
+.jedateblue .jedaym li.disabled { color: #bbb;  }
+.jedateblue .jedaol{width:100%;overflow:auto; padding:0 1px;}
+.jedateblue .jedaul{ padding:0px;overflow:auto;}
+.jedateblue .jedaol li{width:14.28%; float:left; height:30px; line-height:30px; text-align:center; position:relative; overflow:hidden;}
+.jedateblue .jedaul li{width:14.28%; float:left; height:26px;  text-align:center; position:relative; overflow:hidden;}
+.jedateblue .jedaul li .nolunar{line-height: 26px;font-size: 15px; color: #5898f3}
+.jedateblue .jedaul li .solar{height:16px;line-height:16px;font-size: 14px;padding-top: 3px;display: block;}
+.jedateblue .jedaul li .lunar{height:16px;line-height:16px;font-size: 12px;overflow:hidden;display: block;padding: 0 5px;}
+.jedateblue .jedaol li.weeks{background:#002b60; color: #5898f3}
+.jedateblue .jedaul li.action,.jedateblue .jedaul li.action:hover,.jedateblue .jedaul li.action .lunar{background: #083d7d;color:#fff;}
+.jedateblue .jedaul li.other,.jedateblue .jedaul li.other .nolunar,.jedateblue .jedaul li.other .lunar{color:#4DDBFF;}
+.jedateblue .jedaul li.disabled,.jedateblue .jedaul li.disabled .nolunar,.jedateblue .jedaul li.disabled .lunar{ color:#bbb;}
+.jedateblue .jedaul li.disabled:hover{background:#fff;}
+.jedateblue .jedaul li:nth-child(7n){border-right:none;}
+.jedateblue .jedaul li:hover{background: #F2F2F2;}
+.jedateblue .jedaul li.red{ color:#ff0000;}
+.jedateblue .jedaul li .marks{ width:5px; height:5px; background:#ff0000; -webkit-border-radius:50%;border-radius:50%; position:absolute; right:2px; top:4px;}
+.jedateblue .jedaul li.action .marks{ width:5px; height:5px; background:#fff; -webkit-border-radius:50%;border-radius:50%; position:absolute; right:2px; top:4px;}
+
+.jedateblue .jedatebot{height:34px;line-height:34px; padding:0 3px 0 10px;overflow:hidden; margin-top: 5px}
+.jedateblue .jedatebot .jedatehms{margin:0px 5% 3px 0;padding-left:1px;display:inline-block;overflow:hidden;}
+.jedateblue .jedatebot .botflex{width:40%;float:left;display: inline-block;margin:0;padding-top:3px; overflow:hidden;}
+.jedateblue .jedatebot .botflex li{width:105px; float:left;text-align:center;}
+.jedateblue .jedatebot .botflex li input{width:100%;float:left;padding: 0;border:none;text-align: center;display:block;height:26px;line-height:26px;text-decoration: none;outline:none;-moz-outline:none;font-size: 14px;font-family:'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;background: #042654;  }
+.jedateblue .jedatebot .botflex li input[disabled]{background-color: #f0f0f0;color: #aaa;}
+.jedateblue .jedatebot .botflex i{width:12px;float:left;height:26px;line-height:24px;font-style:normal;display:block;text-align: center;background: #f2f2f2; }
+.jedateblue .jedatebot .jedatebtn{text-align:center;font-size: 12px;}
+.jedateblue .jedatebot .jedatebtn span{width:53px;float:right; margin:0 1.1%;background-color: #141688;color: #fff;display: block;height:28px;line-height:28px;text-align:center;}
+
+.jedateblue .jedateproppos{position:absolute;left:0; top:70px;display:none;}
+.jedateblue .jedatepropfix{display:block;}
+.jedateblue .jedatepropcon{padding:40px 5px 5px 5px;background-color: #fff; overflow:hidden;position: relative;}
+.jedateblue .jedatehmstitle{width:100%;height:40px;line-height:40px;position:absolute;left:0;top:0;background: #083d7d; color:#EEEEEE;overflow:hidden;text-align:center;font-size: 15px;}
+.jedateblue .jedateproptext{width:72px; float:left;height:30px;line-height:30px; text-align:center;}
+.jedateblue .jedatehmscon{width:102px;height:156px; float:left; overflow-y:auto; margin-left:50px; background: #0e478b;}
+.jedateblue .jedatehmscon p{width:100%;float:left;text-align: center;height:25px; line-height:25px;font-size: 14px;}
+.jedateblue .jedatehmscon p:hover{background: #F2F2F2;}
+.jedateblue .jedatehmscon p.action,.jedateblue .jedatehmscon p.action:hover{background: #083d7d;color:#fff;}
+.jedateblue .jedatehmscon p.disabled{ background: #fbfbfb;color:#ccc;}
+.jedateblue .jedatehmscon p.disabled.action{ background: #083d7d;color:#FFFFFF;filter:Alpha(opacity=30);opacity:.3; }
+.jedateblue .jedatems p{width:10%;float:left;text-align: center;height:32px; line-height:32px;}
+.jedateblue .jedateh p.action,.jedateblue .jedatems p.action{background: #083d7d;color:#fff;}
+.jedateblue .jedatehmsclose{width:30px; height:30px; line-height:26px; text-align:center;position: absolute;top:50%;right:4px; margin-top:-15px;z-index:150;font-size:24px;}
+
+
+
+
+.tiin{ float: left; color: #fff; margin-right: 15px !important}
